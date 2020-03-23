@@ -19,8 +19,7 @@ def initilaize (attributes)
 @pant_length = pant_length
 @pant_width = pant_width
 
-attributes.each do |key, value|
-  self.send (("#{key}=") value)
+attributes.each {|key, value| self.send(("#{key}="), value)}
 end 
 
 end
